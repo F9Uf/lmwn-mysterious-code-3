@@ -54,9 +54,10 @@ def shortest_path(matrix, start=(0,0)):
     return 0
 
 started = time.time()
-file_path = "in-1.txt"
+file_path = "in-4.txt"
 matrix = read_file_to_matrix(file_path)
 result = shortest_path(matrix)
 duration = time.time() - started
+print("matrix size: %d x %d" % (len(matrix), len(matrix[0])))
 print("result of '%s' is %d" % (file_path, result))
 print("duration: %fs" % (duration))
